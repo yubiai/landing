@@ -79,7 +79,8 @@ button {
 /* Header */
 .ybi__header {
   background-color: #030017;
-  display: flex;
+  display: grid;
+  grid-template-columns: 100px auto 100px;
   left: 0;
   position: fixed;
   top: 0;
@@ -103,6 +104,7 @@ button {
 .ybi__header-nav {
   align-items: center;
   max-width: 60vw;
+  margin: auto;
 }
 
 .ybi__header-list {
