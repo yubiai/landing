@@ -2,10 +2,77 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+  margin: 0;
+}
+
+h3, p {
+  margin: 0;
 }
 
 img {
+  display: block;
   width: 100%;
+}
+
+button {
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 600;
+  border: 0;
+  border-radius: 2px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.ybi__form {
+  display: block;
+}
+
+.ybi__form-input-container {
+  display: block;
+  margin: 1rem 0;
+}
+
+.ybi__form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.ybi__form-input {
+  border: 0;
+  display: block;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.ybi__form-textarea,
+.ybi__form-input,
+.ybi__form-textarea:hover,
+.ybi__form-input:hover,
+.ybi__form-textarea:active,
+.ybi__form-input:active,
+.ybi__form-textarea:focus,
+.ybi__form-input:focus {
+  outline: none;
+}
+
+.ybi__form-textarea {
+  border: 0;
+  border-radius: 0;
+  font-size: 0.875rem;
+  font-family: inherit;
+  padding: 0.5rem;
+  resize: none;
+  width: 100%;
+}
+
+.ybi__form-submit-btn {
+  margin: auto;
+  height: 35px;
+  width: 75px;
 }
 /* ----- */
 
@@ -52,6 +119,10 @@ img {
 /* ----- */
 
 /* Section */
+.ybi__section {
+  margin-top: 70px;
+}
+
 .ybi__section-article:nth-child(odd) {
   background-color: #030017;
   color: #fff;
@@ -60,4 +131,126 @@ img {
 .ybi__section-article:nth-child(even) {
   background-color: #fff;
 }
+
+.ybi__banner-container {
+  margin: 0;
+  width: 100%;
+}
+
+.ybi__section-article {
+  box-sizing: border-box;
+  padding: 4.5rem 0;
+}
+
+.ybi__section-container {
+  margin: auto;
+  max-width: 75vw;
+}
+
+.ybi__section-title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.ybi__section-text {
+  margin: 1rem auto;
+  max-width: 50vw;
+}
+
+.ybi__section-feature {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+.ybi__section-feature:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.ybi__feature-img-container,
+.ybi__feature-content {
+  max-width: 40%;
+}
+
+.ybi__feature-img-container {
+  margin: 0;
+}
+
+.ybi__feature-title {
+  font-size: 1.25rem;
+}
+
+.ybi__section-start .ybi__section-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.ybi__section-step {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.ybi__step-title {
+  font-size: 1.25rem;
+}
+
+.ybi__step-img-container {
+  margin: auto;
+  max-width: 200px;
+}
+
+.ybi__step-img-container.full-screen {
+  max-width: 450px;
+}
+
+.ybi__section-cta {
+  height: 100vh;
+  text-align: center;
+}
+
+.ybi__section-cta .ybi__section-container {
+  height: 100%;
+}
+
+.ybi__section-cta .ybi__section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.ybi__cta-img-container {
+  margin: auto auto 0;
+  max-width: 45vw;
+}
+
+.ybi__cta-btn {
+  height: 50px;
+  width: 150px;
+  background-color: rgb(71, 120, 187);
+  color: #fff;
+  margin: auto;
+}
+
+.ybi__faq-title {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.ybi__section-contacts .ybi__form {
+  margin: auto;
+  max-width: 50vw;
+}
+
+.ybi__section-contacts .ybi__form-input,
+.ybi__section-contacts .ybi__form-textarea {
+  border: 1px solid #212121;
+}
+
+.ybi__section-contacts .ybi__form-submit-btn {
+  background-color: rgb(71, 120, 187);
+  color: #fff;
+}
+
 /* ----- */
