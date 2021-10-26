@@ -35,6 +35,7 @@
           </li>
         </ul>
       </nav>
+      <div class="ybi__header-mobile-overlay"></div>
       <figure class="ybi__header-menu">
         <img class="ybi__header-menu-img" src="img/menu.svg" alt="Menu"/>
       </figure>
@@ -260,5 +261,26 @@
         <p class="ybi__footer-text">Copyright 2021 © Yubiai</p>
       </div>
     </footer>
+    <script>
+      (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+          const headerMenuIconDOM = document.querySelector('.ybi__header-menu');
+          const headerMenuDOM = document.querySelector('.ybi__header-nav');
+          const headerOverlayDOM = document.querySelector('.ybi__header-mobile-overlay');
+
+          if (window.innerWidth < 768) {
+            headerMenuIconDOM.addEventListener('click', function () {
+              headerMenuDOM.classList.add('ybi__visible');
+              headerOverlayDOM.classList.add('ybi__visible');
+            });
+
+            headerOverlayDOM.addEventListener('click', function () {
+              headerMenuDOM.classList.remove('ybi__visible');
+              headerOverlayDOM.classList.remove('ybi__visible');
+            });
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

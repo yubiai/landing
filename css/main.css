@@ -90,7 +90,8 @@ button {
   width: 100%;
 }
 
-.ybi__header-menu {
+.ybi__header-menu,
+.ybi__header-mobile-overlay {
   display: none;
 }
 
@@ -319,6 +320,37 @@ button {
 
   .ybi__header-nav {
     display: none;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: #000;
+    align-items: flex-start;
+    z-index: 100;
+  }
+
+  .ybi__header-mobile-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+  }
+
+  .ybi__header-nav.ybi__visible,
+  .ybi__header-mobile-overlay.ybi__visible {
+    display: block;
+  }
+
+  .ybi__header-list {
+    flex-direction: column;
+  }
+
+  .ybi__header-link-item {
+    margin: 1rem 0;
   }
 
   .ybi__header-icon-container {
